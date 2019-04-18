@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#383B3D"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/mainHeader"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@drawable/header_appearance"
+            android:paddingTop="8sp"
+            android:paddingBottom="8sp"
+            android:text="@string/mainHeader"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/mainHeader" />
+
+        <EditText
+            android:id="@+id/studyIDField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:hint="@string/StudyIDHint"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainHeader"
+            tools:targetApi="o"
+            tools:text="@string/StudyIDHint" />
+
+        <EditText
+            android:id="@+id/studyName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:hint="@string/studyNameHint"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studyIDField"
+            tools:targetApi="o"
+            tools:text="@string/studyNameHint" />
+
+        <TextView
+            android:id="@+id/idHint"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="16sp"
+            android:paddingTop="6sp"
+            android:paddingEnd="8sp"
+            android:text="@string/IDHint"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/studyIDSpinner"
+            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studyIDField" />
+
+        <Spinner
+            android:id="@+id/studyIDSpinner"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/buttonColor"
+            android:dropDownWidth="wrap_content"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studyIDField" />
+
+        <TextView
+            android:id="@+id/NameHint"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingLeft="16sp"
+            android:paddingTop="4sp"
+            android:paddingRight="16sp"
+            android:text="@string/nameHint"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/studyNameSpinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studyName" />
+
+        <Spinner
+            android:id="@+id/studyNameSpinner"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/buttonColor"
+            android:dropDownWidth="wrap_content"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studyName" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="134dp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8sp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/studyNameSpinner">
+
+            <RadioButton
+                android:id="@+id/ImportRadioButton"
+                android:layout_width="180dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="#AF541E"
+                android:text="@string/importRadioButton"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+                tools:targetApi="lollipop"
+                tools:text="@string/importRadioButton" />
+
+            <RadioButton
+                android:id="@+id/createRadioButton"
+                android:layout_width="180dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:buttonTint="#AF541E"
+                android:text="@string/createRadioButton"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ImportRadioButton"
+                tools:targetApi="lollipop"
+                tools:text="@string/createRadioButton" />
+
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/fileName"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:hint="@string/InputFileName"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            tools:targetApi="o"
+            tools:text="@string/InputFileName" />
+
+        <Button
+            android:id="@+id/ClearButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="140sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_round"
+            android:text="@string/clearButton"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/proceedButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fileName" />
+
+        <Button
+            android:id="@+id/proceedButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="140sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_round"
+            android:text="@string/proceedButton"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ClearButton"
+            app:layout_constraintTop_toBottomOf="@+id/fileName" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

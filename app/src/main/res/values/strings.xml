@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Data Collector</string>
+    <string name="importButton">Import Readings</string>
+    <string name="createButton">Create Readings</string>
+    <string name="StudyIDHint">Study ID</string>
+    <string name="studyNameHint">Study Name</string>
+    <string name="siteIDHint">Site ID</string>
+    <string name="proceedButton">Process</string>
+    <string name="readingTypeHint">Reading Type</string>
+    <string name="readingIDHint">Reading ID</string>
+    <string name="readingValueHint">Reading Value</string>
+    <string name="readingDateHint">Reading Date</string>
+    <string name="headerText">Data Collection Tool</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="submitButton">Submit</string>
+    <string name="fileNameField" />
+    <string name="studyIDLabel">Select study_ID</string>
+    <string name="importRadioButton">Import Readings</string>
+    <string name="createRadioButton">Create Readings</string>
+    <string name="mainHeader">Scientific data collection tool</string>
+    <string name="InputFileName">File Name</string>
+    <string name="importHeader">Import page</string>
+    <string name="clearButton">Clear</string>
+    <string name="startButton">Start</string>
+    <string name="endButton">End</string>
+    <string name="CreateHeader">Create Page</string>
+    <string name="IDHint">ID look Up:</string>
+    <string name="nameHint">Name Look Up:</string>
+    <string name="createIDLabel">Study ID:</string>
+    <string name="createNameLabel">Study Name:</string>
+    <string name="readingUnitHint">Reading Unit</string>
+
+</resources>
