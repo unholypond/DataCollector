@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         proceedButton = findViewById(R.id.proceedButton);
         clearButton = findViewById(R.id.ClearButton);
 
-
         /*Definition of the adapter for the study ID list*/
         iDAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
                 studyIDList);
@@ -75,9 +74,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 if (importing.isChecked()) {
                     if(!inputFileName.equals("")) {
                         /*get the file from the file directory by the input file name*/
-//                        String sdCardDirectory = Environment.getExternalStorageDirectory().getParent();
-//                        Log.i(TAG, sdCardDirectory);
-                        File myFile = new File("/sdcard/", inputFileName);
+                        String sdCardDirectory = Environment.getExternalStorageDirectory().getParent();
+                        Log.i(TAG, sdCardDirectory);
+//                        File myFile = new File("/sdcard/", inputFileName);
+                        File myFile = new File(sdCardDirectory, inputFileName);
                         Log.i(TAG,myFile.getName());
                         if(myFile.exists()){
                             /*read the file if it exist else tell the user the file
