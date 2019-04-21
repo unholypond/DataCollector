@@ -96,13 +96,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                         }else{
                             Toast.makeText(myContext, FILE_NOT_FOUND,
-                                    Toast.LENGTH_SHORT).show();
+                                    Toast.LENGTH_LONG).show();
                             fileName.requestFocus();
                         }
 
                     }else{
                         Toast.makeText(myContext, FILE_NAME_REQUEST,
-                                Toast.LENGTH_SHORT).show();
+                                Toast.LENGTH_LONG).show();
                         fileName.requestFocus();
                     }
                 } else if(creating.isChecked()){
@@ -114,12 +114,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         startActivity(intent);
                     }else {
                         Toast.makeText(myContext, STUDY_INPUT_REQUEST,
-                                Toast.LENGTH_SHORT).show();
+                                Toast.LENGTH_LONG).show();
                         studyId.requestFocus();
                     }
                 }else{
                     Toast.makeText(myContext, TASK_SELECTION_REQUEST,
-                            Toast.LENGTH_SHORT).show();
+                            Toast.LENGTH_LONG).show();
                     studyId.requestFocus();
                 }
             }
@@ -158,13 +158,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemSelected(AdapterView<?> arg0, View arg1, int position,long id){
         studyId.setText(studyIDList[position]);
         Toast.makeText(myContext, "Selected Study ID: "+ studyIDList[position],
-                Toast.LENGTH_SHORT).show();
+                Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> argo){
         Toast.makeText(myContext, "No Study ID Selected!",
-                Toast.LENGTH_SHORT).show();
+                Toast.LENGTH_LONG).show();
         studyId.requestFocus();
     }
 

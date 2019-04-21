@@ -9,7 +9,6 @@
     <string name="readingTypeHint">Reading Type</string>
     <string name="readingIDHint">Reading ID</string>
     <string name="readingValueHint">Reading Value</string>
-    <string name="readingDateHint">Reading Date</string>
     <string name="headerText">Data Collection Tool</string>
     <string name="cancelButton">Cancel</string>
     <string name="submitButton">Submit</string>
@@ -29,5 +28,10 @@
     <string name="createIDLabel">Study ID:</string>
     <string name="createNameLabel">Study Name:</string>
     <string name="readingUnitHint">Reading Unit</string>
+    <string name="createDialog_title">Create Successful!</string>
+    <string name="createDialog_message">Do you want to create another Reading?</string>
+    <string name="exportButton">Export</string>
+    <string name="displayHeader">Display Page</string>
+
 
 </resources>
